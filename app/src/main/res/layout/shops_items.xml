@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar1"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:title="Items"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/shimmer"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <include layout="@layout/shimmer_layout1"></include>
+            <include layout="@layout/shimmer_layout1"></include>
+            <include layout="@layout/shimmer_layout1"></include>
+            <include layout="@layout/shimmer_layout1"></include>
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#353532"
+        android:visibility="gone"
+        android:id="@+id/rel1"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+            android:id="@+id/recyclerview"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

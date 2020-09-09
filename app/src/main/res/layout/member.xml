@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#60C5C5C5"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:background="@drawable/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cartdetail"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter "
+                android:textSize="20dp"
+                android:textColor="@color/fui_bgAnonymous"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_marginRight="20dp"
+                android:id="@+id/title"/>
+
+            <com.lib.customedittext.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="15"
+                app:edt_background="@drawable/round_edittext"
+                app:edt_hint="Enter Name"
+                app:edt_padding="@dimen/_10sdp"
+                android:id="@+id/name"
+                app:edt_text_color="@android:color/black"
+                app:edt_text_size="@dimen/_12ssp" />
+
+            <com.lib.customedittext.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="15"
+                app:edt_background="@drawable/round_edittext"
+                app:edt_hint="Enter age"
+                app:edt_padding="@dimen/_10sdp"
+                android:id="@+id/age"
+                app:edt_text_color="@android:color/black"
+                app:edt_text_size="@dimen/_12ssp" />
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--style="@style/TextLabel"-->
+                <!--android:id="@+id/name"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:hint="Enter Name"/>-->
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:inputType="number"-->
+                <!--style="@style/TextLabel"-->
+                <!--android:id="@+id/age"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:hint="Enter age"/>-->
+
+            <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--style="@style/Widget.Shrine.TextInputLayout"-->
+            <!--android:id="@+id/name"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:hint="Enter Name">-->
+
+            <!--<com.google.android.material.textfield.TextInputEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/name1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="text"-->
+            <!--android:maxLines="1" />-->
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--style="@style/Widget.Shrine.TextInputLayout"-->
+            <!--android:id="@+id/age"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:hint="Enter age">-->
+
+            <!--<com.google.android.material.textfield.TextInputEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/age1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLines="1" />-->
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_marginRight="20dp"
+                android:text="Select Gender"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/radio"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/male"
+                    android:text="Male"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:id="@+id/female"
+                    android:layout_marginTop="-31.5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="Female"/>
+
+
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/save"
+                android:textColor="#000"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_edittext"
+                android:backgroundTint="@color/fui_bgAnonymous"
+                android:text="save"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

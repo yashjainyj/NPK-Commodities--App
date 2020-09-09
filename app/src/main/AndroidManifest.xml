@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.npkcommodities">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".MyAccount.EditProfile"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity android:name=".MyAccount.Update_Profile"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity android:name=".MyAccount.Member_Detail"></activity>
+        <activity android:name=".MyAccount.AccountDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyAccount.MyOrder"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <activity android:name=".Product.Product_Detail" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MyAccount.Cart_Main"  android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".Login.Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Login.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

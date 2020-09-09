@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738349223894",
+    "firebase_url": "https://npk-commodities.firebaseio.com",
+    "project_id": "npk-commodities",
+    "storage_bucket": "npk-commodities.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738349223894:android:31d4374059c35b380a9e77",
+        "android_client_info": {
+          "package_name": "com.example.npkcommodities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738349223894-vvmnp88utofe0vjot6vv3jgjvd8bhsg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.npkcommodities",
+            "certificate_hash": "75cb11ddc09a129e7ec906b19c44915a3772929f"
+          }
+        },
+        {
+          "client_id": "738349223894-k0kedu85km4k0k1hv6d8u9auj1sis47h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm8JHt3YcQngEBYreND4TfqbEtDXFbdAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738349223894-k0kedu85km4k0k1hv6d8u9auj1sis47h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

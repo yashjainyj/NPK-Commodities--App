@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    android:outlineSpotShadowColor="@color/colorAccent"
+    android:outlineAmbientShadowColor="@color/colorAccent"
+    android:elevation="12dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+android:src="@drawable/download"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/shop_image"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/shop_address"
+            android:textSize="20sp"
+            android:padding="2dp"
+
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text=""
+        android:id="@+id/shop_name"
+        android:layout_below="@+id/shop_address"
+        android:layout_marginLeft="90dp"
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="10dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/date"
+            android:text=""
+            android:layout_below="@+id/shop_name"
+            android:textSize="15dp"
+            android:padding="2dp"></TextView>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
