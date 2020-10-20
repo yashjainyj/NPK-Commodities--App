@@ -203,7 +203,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rashan Card No."
+                        android:text="Card No."
                         android:textSize="15dp"
                         android:layout_below="@id/phonenumber"
                         android:layout_marginTop="26dp"

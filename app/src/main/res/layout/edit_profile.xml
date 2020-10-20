@@ -220,7 +220,7 @@
                         android:id="@+id/about"
 
                         android:layout_marginRight="20dp"
-                        android:hint="Rashan Card No.">
+                        android:hint="Card No.">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
